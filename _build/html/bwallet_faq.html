@@ -114,8 +114,8 @@
 <h1>BWallet 常见问题<a class="headerlink" href="#bwallet" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>BWallet是什么？<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<p>BWallet是一款非常方便、直观，并且让您安全交易的比特币设备。即使在不安全或者有漏洞的电脑上进行比特币交易，也能保证交易安全的硬件钱包。</p>
-<p>BWallet是一个单一用途的计算机。里面存储的私钥，仅用于签名交易而不发送私钥到计算机。当用户想要进行一笔交易时，比特币软件只是发送交易请求道BWallet设备，并要求一个数字签名。BWallet显示所有请求的比特币数量和目标地址。当按硬件按钮确认交易，BWallet将在内部进行签名交易，并发送数字签名到计算机，整个过程没有泄露你的私钥。因此，用户甚至可以在有漏洞或被黑客攻击的电脑上使用BWallet。</p>
+<p>BWallet是一款方便、直观，并能让您安全地储存和交易比特币的硬件钱包。即使在不安全或者有漏洞的电脑上进行比特币交易，也能保护资金安全。</p>
+<p>BWallet设备能物理随机产生私钥、存储私钥、独立完成签名运算而不发送私钥到计算机。当用户想要进行一笔交易时，外界只发送交易请求到BWallet设备，并要求数字签名。BWallet屏幕显示所有请求的比特币数量和目标地址。用户可通过BWallet设备的按钮确认交易，BWallet将在设备内部进行签名运算，并返回签名结果，整个过程不会泄露比特币钱包的私钥。因此，用户甚至可以在有漏洞或被黑客攻击的电脑上使用BWallet设备。</p>
 </div>
 <div class="section" id="id2">
 <h2>BWallet的优势？<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
@@ -243,8 +243,12 @@
 <p>你从官方购买的BWallet是没有预置私钥和地址的。</p>
 <p>您拿到BWallet设备之后，需要自己初始化钱包，设备随机生成种子（私钥），初始化过程中请务必填写好“种子卡”，并妥善保管。</p>
 <p>BWallet设备的随机数是由STM32的RNG模块来完成的，这种方案采集硬件、噪音、温度、电压等因素综合得到的随机数，属于硬件随机。</p>
-<p>STM32的RNG模块通过了FIPS PUB 140-2 (2001 October 10)认证。</p>
+<p>STM32的RNG模块通过了美国国家标准技术研究所FIPS PUB 140-2 (2001 October 10)的认证。</p>
 <p>我们也对随机数做了大量的测试工作，详情见：<a class="reference external" href="https://github.com/BWallet/bdx-rng-test">https://github.com/BWallet/bdx-rng-test</a></p>
+<div class="admonition important">
+<p class="first admonition-title">重要</p>
+<p class="last">如果您依然担心，那么建议您启用“种子密码”(passphrase)的高级功能。</p>
+</div>
 </div>
 <div class="section" id="bwallet-bootloader-firmware">
 <h2>如何检查BWallet的引导程序(bootloader)和固件(firmware)?<a class="headerlink" href="#bwallet-bootloader-firmware" title="永久链接至标题">¶</a></h2>
