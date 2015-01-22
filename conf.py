@@ -45,7 +45,7 @@ master_doc = 'index'
 # General information about the project.
 module_name = 'bwallet-faq'
 project = u'BWallet 常见问题'
-author = u'Bidixing'
+author = u'bidixing'
 copyright = u'2014, ' + author
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
