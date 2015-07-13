@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>BWallet 常见问题 &mdash; BWallet 常见问题 1.0 文档</title>
@@ -14,7 +15,6 @@
   
 
   
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   
   
@@ -28,11 +28,13 @@
   
 
   
+
+  
     <link rel="top" title="BWallet 常见问题 1.0 文档" href="index.html"/>
         <link rel="prev" title="目录" href="index.html"/> 
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -43,20 +45,32 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
-        <a href="index.html" class="fa fa-home"> BWallet 常见问题</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> BWallet 常见问题
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
+
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
-        
-            <ul class="current">
+          
+          
+              <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">BWallet 常见问题</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">BWallet是什么？</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">BWallet的优势？</a></li>
@@ -74,10 +88,23 @@
 <li class="toctree-l2"><a class="reference internal" href="#id10">如果mybwallet.com网站关闭了怎么办？</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id11">BWallet是否预置私钥、地址?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bwallet-bootloader-firmware">如何检查BWallet的引导程序(bootloader)和固件(firmware)?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">BWallet的官方购买链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">BWallet除了网页以外，支持那些第三方钱包</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">如果无法使用网页版本钱包，怎么办?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">BWallet还支持其它币种吗?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">对于网页版本的钱包，BWallet支持非常好的浏览器有那些?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">BWallet支持多签名吗</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bwalletlogo">BWallet的LOGO可以二次定制吗？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">种子卡是用来干什么的</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bwallet-usb">关于BWallet插入后，无法识别USB设备，怎么办？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">使用网页钱包时浏览插件无法响应或者加载失败？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#electrum">关于electrum桌面钱包如何进行多账户切换？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#electrumbwallet">关于electrum桌面钱包如何再次重新加载BWallet钱包？</a></li>
 </ul>
 </li>
 </ul>
 
+          
         
       </div>
       &nbsp;
@@ -102,13 +129,15 @@
     <li>BWallet 常见问题</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="_sources/bwallet_faq.txt" rel="nofollow"> View page source</a>
+          
+            <a href="_sources/bwallet_faq.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
   <hr/>
 </div>
-          <div role="main">
+          <div role="main" class="document">
             
   <div class="section" id="bwallet">
 <h1>BWallet 常见问题<a class="headerlink" href="#bwallet" title="永久链接至标题">¶</a></h1>
@@ -269,11 +298,85 @@
 <li>bootloader可信了，那么bootloader检查的app的hash值也就可信了。</li>
 </ul>
 </div></blockquote>
-<p>如果您还有什么疑问，可联系我们：<a class="reference external" href="mailto:support&#37;&#52;&#48;bidingxing&#46;com">support<span>&#64;</span>bidingxing<span>&#46;</span>com</a></p>
 <div class="admonition important">
 <p class="first admonition-title">重要</p>
 <p class="last">如果您更新了自定义固件，而又希望还原成官方固件，只需通过mybwallet.com网站重复标准的固件升级流程即可。当然您也可以一直使用您的自定义固件，不过使用过程中会经常提示“非官方固件”。</p>
 </div>
+</div>
+<div class="section" id="id12">
+<h2>BWallet的官方购买链接<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
+<p>请点击：<a class="reference external" href="https://www.bidingxing.com/bwallet">https://www.bidingxing.com/bwallet</a></p>
+</div>
+<div class="section" id="id13">
+<h2>BWallet除了网页以外，支持那些第三方钱包<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
+<p>桌面钱包：electrum</p>
+<blockquote>
+<div><ul class="simple">
+<li>下载地址：<a class="reference external" href="https://www.electrum.org/#download">https://www.electrum.org/#download</a></li>
+<li>使用教程：<a class="reference external" href="https://www.bidingxing.com/video/bwallet-electrum">https://www.bidingxing.com/video/bwallet-electrum</a></li>
+</ul>
+</div></blockquote>
+<p>安卓手机钱包：Mycelium</p>
+<blockquote>
+<div><ul class="simple">
+<li>下载地址：请到安卓手机市场上下载</li>
+<li>使用教程：<a class="reference external" href="https://www.bidingxing.com/video/bwallet-mycelium">https://www.bidingxing.com/video/bwallet-mycelium</a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id14">
+<h2>如果无法使用网页版本钱包，怎么办?<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
+<p>如果需要进行交易，请使用桌面版本钱包：electrum</p>
+<p>如果你需要初始化钱包、或者恢复钱包，可以使用官方离线工具bwallet-tools,下载地址：<a class="reference external" href="https://www.bidingxing.com/resources/bwallet">https://www.bidingxing.com/resources/bwallet</a></p>
+</div>
+<div class="section" id="id15">
+<h2>BWallet还支持其它币种吗?<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<p>BWallet目前支持的币种有比特币（BTC）、莱特币（LTC）、暗黑币（DASH）、域名币（NMC）、狗币（DOGE），支持仅限于BWallet支持，如果需要正常交易使用，需要自己搭建相关币种服务器；目前我们只对比特币做相关的服务器支持。</p>
+</div>
+<div class="section" id="id16">
+<h2>对于网页版本的钱包，BWallet支持非常好的浏览器有那些?<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>windows系统：IE9+、Firefox</li>
+<li>苹果系统：Safari、Firefox</li>
+<li>Linux 系统：Firefox</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id17">
+<h2>BWallet支持多签名吗<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
+<p>BWallet是支持多签名的，目前正开发配套的客户端钱包来支持BWallet</p>
+</div>
+<div class="section" id="bwalletlogo">
+<h2>BWallet的LOGO可以二次定制吗？<a class="headerlink" href="#bwalletlogo" title="永久链接至标题">¶</a></h2>
+<p>是的，在我们1.3.1以上版本，我们提供二次定制LOGO接口，图片要求是128*64的单色图片，可以使用我们的bwallet-tools来完成定制功能</p>
+</div>
+<div class="section" id="id18">
+<h2>种子卡是用来干什么的<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h2>
+<p>种子卡是用来记录初始化BWallet所产生的种子单词的，种子单词就相当于私钥，一定要妥善保管</p>
+</div>
+<div class="section" id="bwallet-usb">
+<h2>关于BWallet插入后，无法识别USB设备，怎么办？<a class="headerlink" href="#bwallet-usb" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>确认数据线是否是支持数据通信，检测办法，将安卓手机用数据线与电脑连接，如果能正常识别，则说明数据线正常，否则请更换新的数据线</li>
+<li>请确认PC机的USB口是否正常</li>
+<li>连接BWallet设备后，如果屏幕上显示“Firmware are appears to be broken”字样，请更新固件，如何更新固件，请参考说明书，升级部分</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id19">
+<h2>使用网页钱包时浏览插件无法响应或者加载失败？<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h2>
+<p>请参考插件安装文档：<a class="reference external" href="http://mybwallet.com/docs/plugin-guide/zh/">http://mybwallet.com/docs/plugin-guide/zh/</a></p>
+</div>
+<div class="section" id="electrum">
+<h2>关于electrum桌面钱包如何进行多账户切换？<a class="headerlink" href="#electrum" title="永久链接至标题">¶</a></h2>
+<p>打开electrum钱包后，请在软件右下中的“所有账户”列表中选择相应的账户</p>
+</div>
+<div class="section" id="electrumbwallet">
+<h2>关于electrum桌面钱包如何再次重新加载BWallet钱包？<a class="headerlink" href="#electrumbwallet" title="永久链接至标题">¶</a></h2>
+<p>打开electrum钱包后，如果你目前的BWallet钱包是“wallet_1”，请选择electrum软件的左上角“文件”&#8212;&gt;“打开”，然后将里面的“wallet_1”删除，如果不能删除，请关闭软件后到，相关的目录中删除，然后重新新建钱包</p>
+<p>如果您还有什么疑问，可联系我们：<a class="reference external" href="mailto:support&#37;&#52;&#48;bidingxing&#46;com">support<span>&#64;</span>bidingxing<span>&#46;</span>com</a></p>
 </div>
 </div>
 
@@ -284,7 +387,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="index.html" class="btn btn-neutral" title="目录"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="目录" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -296,9 +399,10 @@
         &copy; 版权所有 2014, bidingxing.
     </p>
   </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 
-  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
 </footer>
+
         </div>
       </div>
 
